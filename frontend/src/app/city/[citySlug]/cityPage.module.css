@@ -1,0 +1,41 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 24px 80px;
+  background-color: var(--bg-base);
+  overflow: hidden;
+}
+
+.ambientGlow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.loadingPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px;
+  font-family: var(--font-outfit, 'Outfit', sans-serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(20px);
+}
